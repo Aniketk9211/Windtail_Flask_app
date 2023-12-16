@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Patient Information Form</title>
+    <link rel="stylesheet" href="static/css/main.css">
+  </head>
+  <body>
+    <h1>Patient Information Form</h1>
+    <div class="bg-yellow-600 container mx-auto">
+      <form class="flex flex-col  " action="patient" method="post">
+
+        <label for="patient_name">Patient Name:</label>
+        <input type="text" id="patient_name" name="patient_name" required>
+        <br>
+        <label for="date_of_birth">Date of Birth:</label>
+        <input type="date" id="date_of_birth" name="date_of_birth" required>
+        <br>
+
+        
+        <label for="gender">Gender:</label>
+
+        <select name="gender" required>
+          <option value="male">Male</option>      
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+          
+        </select>
+        
+        <br>
+        
+        <label for="address">Address:</label>
+        <textarea name="address" id="address" rows="3" required></textarea>
+        <br>
+        <label for="phone_number">Phone Number:</label>
+        <input type="number" id="phone_number" name="phone_number" required>
+        <br>
+        <label for="emergency_contact">Emergency Contact Name and Number:</label>
+        <input type="text" id="emergency_contact" name="emergency_contact" required>
+        <br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
